@@ -1,0 +1,38 @@
+{
+  "paths" : [
+    {
+        "input": "no-line-pdfs",
+        "croppedPdfs": "cropped-pdfs",
+        "mergedPdfs": "merged-pdfs",
+        "printedPdfs": "printed-pdfs",
+        "HFPdfs": "header-and-footer-pdf"
+    }],
+  "cropCoordinates" : [
+    {
+        "Slide1":{
+            "UpperLeftXY":["90","750"],
+            "UpperRightXY":["505","750"],
+            "LowerRightXY":["505","440"],
+            "LowerLeftXY":["90","440"]
+        },
+        "Slide2":{
+            "UpperLeftXY":["90","400"],
+            "UpperRightXY":["505","400"],
+            "LowerRightXY":["505","90"],
+            "LowerLeftXY":["90","90"]
+        }
+    }],
+    "texts" : [
+        {
+            "Header":{
+                "text":"prova Header",
+                "fontSize":"24",
+                "Margin":"2"
+            },
+            "Footer":{
+                "text":"",
+                "fontSize":"24",
+                "Margin":"2"
+            }
+        }]
+}

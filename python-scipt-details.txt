@@ -1,0 +1,55 @@
+ Hi.
+ 
+I have a folder containing some PDF files.
+ 
+Every PDF file is made of A4 pages, composed of 2 horizontal slides printed on each page.
+ 
+I need a Python script doing the following on every PDF file:
+ 
+1) remove a text line overlay on every page and create a brand new PDF in a folder named "no-line-pdfs";
+ 
+2) take the PDF in the "no-line-pdfs" folder, crop every page in 2 parts (according to predefined coordinates - please see instructions below) and store them as 1-page PDFs in a folder called "cropped-pdfs";
+ 
+3) take the PDFs in the "cropped-pdfs" folder, merge the cropped slides to 1 brand new PDF document (landscape format) and store it in a folder called "merged-pdf" ;
+ 
+4) take the PDFs in the "merged-pdf" folder and "print-out" to a band new PDF (A4 portrait format) with 3 slides per page, in a folder called "printed-pdf": I need the possibility (optional) to put a rectangular frame around every slide printed to the new A4 vertical page;
+ 
+5) take the PDF in the "printed-pdf" and put header and footer to it, then store in a folder called "header-and-footer-pdf":
+I need the possibility to choose the font, the font size, the top margin and the bottom margin for both of them;
+I need the possibility to customize the header and footer
+(the footer will actually be almost always this format: page-number / total pages).
+ 
+ 
+The python script will have to be composed of different functions,
+each one doing 1 action at time of the 5 actions specified above.
+ 
+The python script will have to give the opportunity to skip 1 or more actions at init time.
+ 
+The python script will have to create an output log in every folder with the same .
+ 
+ 
+The python script will have to be customizable via a template json input file, by giving information like:
+ 
+1) the directory containing the original PDFs (the input PDFs will have not to be modified)
+ 
+2) the destination directory for the new PDFs (this directory will contain the "no-text-line", "cropped-pdfs", "merged-pdf", "printed-pdf" and "header-and-footer-pdf" folders)
+ 
+3) the crop points coordinates of the top horizontal slide to crop;
+ 
+4) the crop points coordinates of the bottom horizontal slide to crop;
+ 
+5) the header text, font size, top margin (in centimeters)
+ 
+6) the footer text, font size, bottom margin (in centimeters):
+     if no footer will be specified, the default output will have to be "page-number / total pages"
+ 
+ 
+The final PDFs will have to be editable as the original one, no "print as image" action in this script is accepted.
+ 
+That's it.
+ 
+Please submit your offer only if you are able to do it.
+ 
+Delivery within 3 days.
+ 
+Thanks
